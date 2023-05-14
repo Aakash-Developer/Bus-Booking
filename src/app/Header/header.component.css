@@ -1,0 +1,84 @@
+/* <a class="navbar-brand" href="#">Book-<img src="../../assets/Images/logo-1.png" alt="">-Bus</a> */
+
+nav{
+    background-color: #400352e8 !important;
+}
+.navbar-brand{
+    font-weight: 900;
+    color: white;
+}
+.navbar-nav li a{
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+}
+.active{
+    color:rgb(8, 189, 8) !important;
+    font-size: 18px !important;
+}
+.Profile{
+    display: flex;
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+    border: 5px solid white;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.Profile i{
+    color: white;
+    transition: 1s;
+} 
+.Profile:hover{
+    border-color: rgb(138, 137, 137) ;
+}
+.Profile:hover > a i{
+    color: rgb(138, 137, 137);
+}
+.navbar-toggler{
+    padding: 3px !important;
+}
+.navbar-toggler-icon{
+    width: 30px !important;
+  }
+  .Mobile{
+    display: none;
+  }
+  #Pro-info{
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding: 2px 10px;
+    top: 37px;
+    box-shadow: 2px 2px 3px -2px black;
+    z-index: 10000;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+  .Profile:hover #Pro-info{
+    display: block;
+  }
+  button.btn {
+    margin-top: 5px;
+    padding: 0px  21px !important;
+    font-size: 14px;
+}
+  @media screen and (max-width: 768px){
+    .align-items-center {
+        align-items: self-start !important;
+    }
+    .container{
+    max-width: 100%;
+    }
+    .Mobile{
+        display: none;
+    }
+    .Profile{
+        display: none;
+    }
+  }

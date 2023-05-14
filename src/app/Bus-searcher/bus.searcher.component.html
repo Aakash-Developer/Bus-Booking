@@ -1,0 +1,19 @@
+<div>
+  <div class="row gap-2">
+  <div class="col-md-12">
+    <label for="leaving-from" class="form-label">Leaving From</label>
+    <input type="text" class="form-control" placeholder="Select Place" id="leaving-from" [(ngModel)]="Leaving_From">
+  </div>
+  <div class="col-md-12">
+    <label for="Going-To" class="form-label">Going To</label>
+    <input type="text" class="form-control" placeholder="Select Place" id="Going-To" [(ngModel)]="Going_to">
+  </div>
+  <div class="col-md-12">
+    <label for="Departing-On" class="form-label">Departing <span class="op">( Optional )</span></label>
+    <input type="date" class="form-control"  id="Departing-On" [(ngModel)]="book_date">
+  </div> 
+    <div>
+      <button class="btn col-md-12 " (click)="Get_search_val()">Search Bus</button>
+    </div>
+  </div>
+</div>

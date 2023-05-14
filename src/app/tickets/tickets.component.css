@@ -1,0 +1,96 @@
+.tickits{
+    padding:10px 30px;
+    border: none;
+    border-top: 1px solid purple;
+    border-bottom: 1px solid purple;
+    border-left: 3px dotted purple;
+    border-right: 3px dotted purple;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.tickits::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: -23px;
+    top: 0px;
+    bottom: 0px;
+    width: 20px;
+    background-image: url('../../assets/Images/Right-side-tickit.jpg');
+    background-size: contain;
+}
+.tickits::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: -23px;
+    top: 0px;
+    bottom: 0px;
+    width: 20px;
+    background-image: url('../../assets/Images/left-side-Tickit.jpg');
+    background-size: contain;
+}
+  
+.tickits > .passenger .row {
+    justify-content: space-evenly;
+}
+.tickits > .bus{
+    display: flex;
+    justify-content: space-evenly;
+}
+h5{
+    border-bottom: 1px solid lightgray;
+    color: #400352;
+    padding-bottom: 5px;
+    font-weight: 600;
+    font-size: 17px;
+}
+h6 >span{
+    color: rgba(71, 71, 71, 0.779);
+}
+
+hr{
+    border: none;
+    border-top: 2px dotted #400352 !important;
+}
+
+
+.Ticket-title{
+    padding: 5px;
+    background-color: #400352e8;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+p{
+    line-height: 26px;
+    font-size: 15px;
+}
+
+
+@media screen and (max-width: 768px) {
+    /* styles for screens with a width of 768 pixels or less */
+    h5{
+        font-size: 16px;
+    }
+    h6{
+        font-size: 14px;
+    }
+    .tickits{
+        padding: 10px;
+    }
+    h3{
+        font-size:15px !important;
+        text-align: center !important;
+    }
+    .Ticket-title{
+        padding: 10px;
+    }
+    p{
+        font-size: 14px;
+    }
+}

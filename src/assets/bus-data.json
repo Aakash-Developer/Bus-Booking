@@ -1,0 +1,145 @@
+ [
+      {
+        "id":"001",
+        "busName": "Expressive Express",
+        "root": "Mumbai - Pune",
+        "seatsAvailable":27,
+        "seatRate": 1100,
+        "arrivalTime": "10:30 AM",
+        "departureTime": "08:00 AM",
+        "Date":"",
+        "coach_type":"AC"
+      },
+      {
+        "id":"002",
+        "busName": "Urban Cruiser",
+        "root": "Pune - Bangalore",
+        "seatsAvailable":27,
+        "seatRate": 1000,
+        "arrivalTime": "06:45 PM",
+        "departureTime": "12:30 PM",
+        "Date":"",
+        "coach_type":"AC"
+      },
+      {
+        "id":"003",
+        "busName": "Metro Glide",
+        "root": "Mumbai - Goa",
+        "seatsAvailable":27,
+        "seatRate": 2000,
+        "arrivalTime": "08:00 PM",
+        "departureTime": "02:30 PM",
+        "Date":"",
+        "coach_type":"Non/AC"
+      },
+      {
+        "id":"004",
+        "busName": "Road Rover",
+        "root": "Delhi - Jaipur",
+        "seatsAvailable":27,
+        "seatRate": 1600,
+        "arrivalTime": "09:00 PM",
+        "departureTime": "04:00 PM",
+        "Date":"",
+        "coach_type":"Non/AC"
+      },
+      {
+        "id":"005",
+        "busName": "Commute Coach",
+        "root": "Chennai - Hyderabad",
+        "seatsAvailable":27,
+        "seatRate": 1500,
+        "arrivalTime": "06:00 AM",
+        "departureTime": "11:00 PM",
+        "Date":"",
+        "coach_type":"AC"
+      },
+      {
+        "id":"006",
+        "busName": "Transit Titan",
+        "root": "Hyderabad - Bangalore",
+        "seatsAvailable":27,
+        "seatRate": 3000,
+        "arrivalTime": "04:30 AM",
+        "departureTime": "09:00 PM",
+        "Date":"",
+        "coach_type":"Non/AC"
+      },
+      {
+        "id":"007",
+        "busName": "Wander Bus",
+        "root": "Bangalore - Chennai",
+        "seatsAvailable":27,
+        "seatRate": 2100,
+        "arrivalTime": "08:15 AM",
+        "departureTime": "11:45 PM",
+        "Date":"",
+        "coach_type":"AC"
+      },
+      {
+        "id":"008",
+        "busName": "Journey Jumbo",
+        "root": "Jaipur - Delhi",
+        "seatsAvailable":27,
+        "seatRate": 1330,
+        "arrivalTime": "07:45 PM",
+        "departureTime": "01:30 PM",
+        "Date":"",
+        "coach_type":"AC"
+      },
+      {
+        "id":"009",
+        "busName": "Unity Cruiser",
+        "root": "Goa - Mumbai",
+        "seatsAvailable":27,
+        "seatRate": 1200,
+        "arrivalTime": "09:30 PM",
+        "departureTime": "04:30 PM",
+        "Date":"",
+        "coach_type":"AC"
+      },
+      {
+        "id":"0010",
+        "busName": "Adventure Hauler",
+        "root": "Pune - Mumbai",
+        "seatsAvailable":27,
+        "seatRate": 899,
+        "arrivalTime": "07:00 AM",
+        "departureTime": "11:30 PM",
+        "Date":"",
+        "coach_type":"Non/AC"
+      },
+      {
+        "id":"0011",
+        "busName": "Swift Shuttle",
+        "root": "Anand - Mumbai",
+        "seatsAvailable":27,
+        "seatRate": 800,
+        "arrivalTime": "07:00 AM",
+        "departureTime": "01:30 PM",
+        "Date":"",
+        "coach_type":"AC"
+      },
+      {
+        "id":"0012",
+        "busName": "Skyliner",
+        "root": "Anand - Vadodra",
+        "seatsAvailable":27,
+        "seatRate": 450,
+        "arrivalTime": "01:00 AM",
+        "departureTime": "01:30 PM",
+        "Date":"",
+        "coach_type":"AC"
+      },
+      {
+        "id":"0013",
+        "busName": "Majestic Mover",
+        "root": "Kanjari - Lambhvel",
+        "seatsAvailable":27,
+        "seatRate": 150,
+        "arrivalTime": "10:00 AM",
+        "departureTime": "10:20 AM",
+        "Date":"",
+        "coach_type":"AC"
+      }
+]

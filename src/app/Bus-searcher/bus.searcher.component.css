@@ -1,0 +1,13 @@
+.btn{
+    background-color: #400352e8;
+    color: white;
+}
+.btn:hover{
+    background-color: rgb(64 3 82 / 70%);
+}
+input[type="date"] {
+    text-transform: uppercase;
+  }
+span.op{
+    color: rgb(213 207 207);
+}

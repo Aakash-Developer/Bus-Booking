@@ -1,0 +1,84 @@
+<div class="container-fluid mt-5">
+    <div class="tickits mb-2" *ngFor="let record of booked_tickets">
+        <div class="passenger">
+            <div class="Ticket-title mb-2">
+                <div class="row">
+                <div class="col-lg-6"><h3 class="text-white  fs-5 m-0">{{record.Bus_data.root}}</h3></div>
+                <div class="col-lg-6"><h3 class="text-white  fs-5 text-end m-0">{{record.Bus_data.Date}}</h3></div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-3 ">
+                    <div class="title">
+                        <h5>Passenger Details</h5>
+                    </div>
+                    <div class="title-body">
+                    <p>Name : <span>{{record.username}}</span></p>
+                    <p>Mobile No : <span>{{record.mobile}}</span></p>
+                    <p>Email : <span>{{record.email}}</span></p>
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="title">
+                        <h5>Ticket Id</h5>
+                    </div>
+                    <div class="title-body">
+                        <p><span>{{record.Booking_id}}</span></p>
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="title">
+                        <h5>Seat No.</h5>
+                    </div>
+                    <div class="title-body">
+                        <p><span>{{record.Selected_Seats}}</span></p>
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="title">
+                        <h5>Total Price</h5>
+                    </div>
+                    <div class="title-body">
+                        <p><span>{{record.Total_price|currency:"INR"}}</span></p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-3 ">
+                    <div class="title">
+                        <h5>Bus Name</h5>
+                    </div>
+                    <div class="title-body">
+                        <p><span>{{record.Bus_data.busName}}</span></p>
+                        <small>Coach Type: {{record.Bus_data.coach_type}}</small>
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="title">
+                        <h5>Reporting Time</h5>
+                    </div>
+                    <div class="title-body">
+                        <p><span>Before 30 Minutes</span></p>
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="title">
+                        <h5>Departure Time</h5>
+                    </div>
+                    <div class="title-body">
+                        <p><span>{{record.Bus_data.departureTime}}</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <button class="btn" class="center" (click)="Print()">Print</button> -->
+    <div *ngIf="(booked_tickets)?.length == 0">
+        <div class="text-center"><div class="alert alert-danger" role="alert">
+            <strong>No booking found..!</strong>
+        </div>
+        </div>
+    </div>
+    
+</div>

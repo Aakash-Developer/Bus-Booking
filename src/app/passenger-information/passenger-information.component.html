@@ -1,0 +1,22 @@
+<div class="passenger-info w-auto d-flex justify-content-center mt-5">
+    <div class="card">
+        <div class="card-body">
+            <form [formGroup]="profileForm" (ngSubmit)="Submit()">
+                <div class="row  justify-content-center">
+                    <div class="col-md-12 mb-3">
+                        <input type="text" name="Username" class="form-control" placeholder="Username" formControlName="username">
+                    </div>
+                    <div class="col-md-12  mb-3">
+                        <input type="text" name="Mobile" class="form-control" placeholder="Enter Mobile Number:" formControlName="number">
+                    </div>
+                    <div class="col-md-12  mb-3">
+                        <input type="email" name="Email" class="form-control" placeholder="Email" formControlName="email">
+                    </div>
+                    <div class="col-md-12  mb-1">
+                       <button class="btn" type="submit"  value="Submit" [disabled]="!profileForm.valid">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

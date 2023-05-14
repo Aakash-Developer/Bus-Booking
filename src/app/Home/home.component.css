@@ -1,0 +1,78 @@
+#left{
+    width: 68%;
+    
+}
+#right{
+    border: 1px solid #4003523d;
+    padding: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    width: 30%;
+}
+
+p{
+    line-height: 25px;
+    color: #400352e8;
+    font-weight: 500;
+}
+
+tr{
+    text-align: center;
+}
+.card{
+    border-color:  #4003523d;;
+margin-bottom: 10px;
+}
+
+.card-header{
+    font-weight: 700;
+    color: #400352e8 !important;
+    background-color: #ffffff4c !important;
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+}
+
+span{
+    color: rgb(149, 149, 149);
+}
+
+.card-body{
+    background-image: url('../../assets/Images/Bus-2.jpg');
+    background-position: bottom right;
+    background-size: contain ;
+    background-repeat: no-repeat;
+}
+
+
+@media screen and (max-width: 768px) {
+    /* styles for screens with a width of 768 pixels or less */
+    .main-box{
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+    #left{
+        width: 100%;
+    }
+    #right{
+        width: 100% !important;
+        margin-bottom: 10px !important;
+    }
+    .table{
+        width: 700px;
+    }
+    p{
+        font-size: 15px;
+    }
+
+}
+@media screen and (max-width: 520px) {
+    /* styles for screens with a width of 768 pixels or less */
+    .card-body{
+        background-image: none;
+    }
+}

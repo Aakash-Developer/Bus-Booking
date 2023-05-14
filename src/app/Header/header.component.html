@@ -1,0 +1,42 @@
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#" [routerLink]="['']">Mytrip<img src="../../assets/Images/logo-1.png" alt="" [width]="40">.com</a>
+        <button class="navbar-toggler d-lg-none bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="collapse  navbar-collapse justify-content-end" id="collapsibleNavId" >
+            <ul class="navbar-nav align-items-center">
+                <li class="nav-item">
+                    <a  class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" [routerLink]="['/']" aria-current="page">Home<span class="visually-hidden">(current)</span></a>
+                </li>
+                <li class="nav-item me-4">
+                    <a   class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" [routerLink]="['/tickets']">Tickets</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a   class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" [routerLink]="['/review-bus-ticket']">Review</a>
+                </li>
+                <li class="nav-item">
+                    <a   class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" [routerLink]="['/passenger-info']">Passenger Info</a>
+                </li>
+                <li class="nav-item me-4">
+                    <a   class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" [routerLink]="['/seat-selection']">Select Seat</a>
+                </li> -->
+                <li class="nav-item " class="Profile ">
+                    <a class="nav-link">
+                    <i class="fa-solid fa-user"></i>
+                    </a>
+                    <span id="Pro-info" class="text-center">
+                        <h6>{{U_rec?.Username}}</h6><h6>{{U_rec?.Email}}</h6>
+                        <div><button class="btn" (click)="logout()">LogOut</button></div>
+                    </span>
+                </li>
+                <li class="nav-item " class="Profile-m Mobile">
+                    <a class="nav-link">
+                        Profile
+                    </a>
+                </li>
+            </ul>
+        </div>
+  </div>
+</nav>

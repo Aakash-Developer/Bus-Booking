@@ -1,0 +1,83 @@
+<div class="container-fluid mt-5">
+    <div class="tickits">
+        <div class="passenger">
+            <div class="Ticket-title mb-2">
+                <div class="row">
+                <div class="col-lg-6"><h3 class="text-white  m-0">{{new_bus_data.root}}</h3></div>
+                <div class="col-lg-6"><h3 class="text-white  text-end m-0">{{new_bus_data.Date}}</h3></div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-3 ">
+                    <div class="title">
+                        <h5>Passenger Details</h5>
+                    </div>
+                    <div class="title-body">
+                    <h6>Name : <span>xxxxxxxxxxx</span></h6>
+                    <h6>Mobile No : <span>xxxxxxxxxxx</span></h6>
+                    <h6>Email : <span>xxxxxxxxxxx</span></h6>
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="title">
+                        <h5>Ticket Id</h5>
+                    </div>
+                    <div class="title-body">
+                        <h6><span>xxxxxxxxxxx</span></h6>
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="title">
+                        <h5>Seat No.</h5>
+                    </div>
+                    <div class="title-body">
+                        <h6><span style="word-break: break-word;">{{Seats}}</span></h6>
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="title">
+                        <h5>Total Price</h5>
+                    </div>
+                    <div class="title-body">
+                        <h6><span>Rs.{{Total_rate}}</span></h6>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-3 ">
+                    <div class="title">
+                        <h5>Bus Name</h5>
+                    </div>
+                    <div class="title-body">
+                        <h6><span>{{new_bus_data.busName}}</span></h6>
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="title">
+                        <h5>Reporting Time</h5>
+                    </div>
+                    <div class="title-body">
+                        <h6><span>Before 30 Minutes</span></h6>
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="title">
+                        <h5>Departure Time</h5>
+                    </div>
+                    <div class="title-body">
+                        <h6><span>{{new_bus_data.departureTime}}</span></h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="d-flex justify-content-center mt-3 gap-2">
+            <button class="btn" (click)="Confirm_pay(new_bus_data.id)">Confirm & Pay</button>
+            <button class="btn bg-danger" (click)="go_back()">Back</button>
+            </div>
+        </div>
+    </div>
+</div>
